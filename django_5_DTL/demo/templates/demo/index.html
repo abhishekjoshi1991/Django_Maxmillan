@@ -1,0 +1,16 @@
+<!--template inheritance-->
+{% extends 'base.html' %}
+{% block title %} Monthly Challenge {% endblock title %}
+{% block content %}
+   {% include 'demo/header.html' %}  <!-- for including partial templates-->
+    <ul>
+        {% for m in months %}
+        <li>
+            <!--dynamic url as, {% url viewname month as argument %}-->
+            <a href="{% url 'monthly-challenge' m%}">
+                {{ m|title }}
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+{% endblock content %}

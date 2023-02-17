@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<h1> Ran Application Template</h1>
+<h3>
+    <ul>
+    Django looks for templates in setting.py file in templates location
+</ul>
+
+<ul>
+    there are two main parameter
+    <li>DIRS</li>
+    <li>APP_DIRS</li>
+
+</ul>
+
+<ul>To use APP_DIRS app must be in list of installed apps</ul>
+<ul>APP_DIRS if set to true, automatically fetches all templates from applications folder
+    in application it searches for templates folder from there it loads templates
+    <br>
+    Convention is to create templates folder then folder with app name inside it all files are present
+</ul>
+<ul>DIRS on other hand loads templates those are not in applications, for that we need
+    to give path inside DIRS like BASE_DIR + '/templates'
+</ul>
+<ul>for app specific templates we do not need to enter full path and write it into DIRS
+    we already have APP_DIRS for that
+</ul>
+</h3>
+
+
+
+</body>
+</html>
+
+
+
